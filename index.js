@@ -28,7 +28,7 @@ app.use(limiter);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
-app.use(morgan("dev"));
+app.use(morgan(":method :url :status :response-time ms"));
 app.use(compression());
 app.use(upload.any());
 //  this is used for some static files that are stored on the server
