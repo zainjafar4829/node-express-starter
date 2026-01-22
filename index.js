@@ -13,7 +13,7 @@ const appRoutes = require("./routes/index");
 const app = express();
 const PORT = process.env.PORT || 5000;
 const path = require("path");
-const upload = multer();
+const upload = require("./middlewares/multer");
 
 // Middleware
 app.use(helmet());
